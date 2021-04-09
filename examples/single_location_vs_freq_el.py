@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 """ This example shows how to compute the 'attenuation exceeded for 0.1 % of
 time of the average year' vs. 'frequency' and 'elevation angle'
 for a single location.
@@ -32,7 +33,7 @@ h_sat = 35786 * itur.u.km
 
 # Compute the elevation angle between satellite and ground station
 el = itur.utils.elevation_angle(h_sat, lat_sat, lon_sat, lat_GS, lon_GS)
-
+print(el)
 f = 22.5 * itur.u.GHz    # Link frequency
 D = 1.2 * itur.u.m       # Antenna diameters
 p = 1
